@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.App {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.username-input,
+.interest-input-field,
+.new-room-input,
+.passcode-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.username-input:focus,
+.interest-input-field:focus,
+.new-room-input:focus,
+.passcode-input:focus {
+    border-color: #007bff;
+}
+
+button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e9ecef;
+}
+
+.room-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.interest-input ul {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.interest-input li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .App, .room-list {
+        padding: 15px;
+    }
+
+    .username-input,
+    .interest-input-field,
+    .new-room-input,
+    .passcode-input {
+        width: calc(100% - 30px);
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
